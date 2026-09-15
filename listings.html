@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Listings — Skyline Realty</title>
+  <meta name="description" content="Browse properties for sale and rent across Lahore, Karachi and Islamabad. Verified listings by Skyline Realty." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="sp" id="sp" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">Skyline<span>Realty</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="listings.html" aria-current="page">Listings</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-blue" href="contact.html">Free consultation</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" style="padding:60px 0 80px">
+    <div class="hero-fx" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="glow g2"></div>
+      <div class="orb o1"></div>
+      <div class="orb o2"></div>
+    </div>
+    <div class="container">
+      <div class="hero-inner">
+        <span class="kicker rise" style="--d:.05s">Browse properties</span>
+        <h1 class="rise" style="--d:.15s">Find your perfect <em>property.</em></h1>
+        <p class="rise" style="--d:.25s">Explore verified homes, plots and apartments for sale and rent across Lahore, Karachi and Islamabad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top:-40px;position:relative;z-index:4">
+    <div class="container">
+      <div class="listings-tabs reveal" role="tablist">
+        <button type="button" class="active" data-mode="all">All</button>
+        <button type="button" data-mode="sale">For Sale</button>
+        <button type="button" data-mode="rent">For Rent</button>
+      </div>
+
+      <div class="filter-bar reveal">
+        <div class="field">
+          <label for="filter-city">City</label>
+          <select id="filter-city">
+            <option value="all">All Cities</option>
+            <option value="lahore">Lahore</option>
+            <option value="karachi">Karachi</option>
+            <option value="islamabad">Islamabad</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-type">Property Type</label>
+          <select id="filter-type">
+            <option value="all">All Types</option>
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="plot">Plot</option>
+            <option value="commercial">Commercial</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-budget">Budget</label>
+          <select id="filter-budget">
+            <option value="all">Any Budget</option>
+            <option value="under1cr">Under Rs. 1 Crore</option>
+            <option value="1to3cr">Rs. 1 – 3 Crore</option>
+            <option value="3to7cr">Rs. 3 – 7 Crore</option>
+            <option value="over7cr">Rs. 7 Crore+</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="listing-count reveal">12 properties found</p>
+
+      <div class="listing-grid">
+        <!-- 1 -->
+        <article class="prop reveal" data-mode="sale" data-city="lahore" data-type="house" data-bucket="3to7cr" data-budget="3to7cr">
+          <div class="facade sky"><i class="win"></i><i class="win2"></i><i class="tag sale">For Sale</i></div>
+          <div class="prop-body">
+            <h3>DHA Phase 5 Luxury House</h3>
+            <div class="price">Rs. 6.5 Crore</div>
+            <div class="meta"><span><b>5</b> Beds</span><span><b>6</b> Baths</span><span><b>4,200</b> sq ft</span></div>
+          </div>
+        </article>
+        <!-- 2 -->
+        <article class="prop reveal" data-mode="rent" data-city="lahore" data-type="apartment" data-budget="1to3cr">
+          <div class="facade dusk"><i class="win"></i><i class="win2"></i><i class="tag rent">For Rent</i></div>
+          <div class="prop-body">
+            <h3>Gulberg III Serviced Apartment</h3>
+            <div class="price">Rs. 1,20,000/mo</div>
+            <div class="meta"><span><b>2</b> Beds</span><span><b>2</b> Baths</span><span><b>1,400</b> sq ft</span></div>
+          </div>
+        </article>
+        <!-- 3 -->
+        <article class="prop reveal" data-mode="sale" data-city="karachi" data-type="apartment" data-budget="1to3cr">
+          <div class="facade lake"><i class="win"></i><i class="win2"></i><i class="tag sale">For Sale</i></div>
+          <div class="prop-body">
+            <h3>Clifton Sea View Apartment</h3>
+            <div class="price">Rs. 2.8 Crore</div>
+            <div class="meta"><span><b>3</b> Beds</span><span><b>3</b> Baths</span><span><b>1,850</b> sq ft</span></div>
+          </div>
+        </article>
+        <!-- 4 -->
+        <article class="prop reveal" data-mode="sale" data-city="islamabad" data-type="plot" data-budget="under1cr">
+          <div class="facade sand"><i class="win"></i><i class="win2"></i><i class="tag sale">For Sale</i></div>
+          <div class="prop-body">
+            <h3>Bahria Enclave Plot</h3>
+            <div class="price">Rs. 85 Lakh</div>
+            <div class="meta"><span><b>10</b> Marla</span><span>Corner</span><span><b>Approved</b></span></div>
+          </div>
+        </article>
+        <!-- 5 -->
+        <article class="prop reveal" data-mode="rent" data-city="lahore" data-type="house" data-budget="3to7cr">
+          <div class="facade gold"><i class="win"></i><i class="win2"></i><i class="tag rent">For Rent</i></div>
+          <div class="prop-body">
+            <h3>DHA Phase 6 Bungalow</h3>
+            <div class="price">Rs. 2,50,000/mo</div>
+            <div class="meta"><span><b>5</b> Beds</span><span><b>5</b> Baths</span><span><b>1 kanal</b></span></div>
+          </div>
+        </article>
+        <!-- 6 -->
+        <article class="prop reveal" data-mode="sale" data-city="karachi" data-type="house" data-budget="3to7cr">
+          <div class="facade wood"><i class="win"></i><i class="win2"></i><i class="tag sale">For Sale</i></div>
+          <div class="prop-body">
+            <h3>Bahria Town Karachi Villa</h3>
+            <div class="price">Rs. 4.2 Crore</div>
+            <div class="meta"><span><b>4</b> Beds</span><span><b>5</b> Baths</span><span><b>3,600</b> sq ft</span></div>
+          </div>
+        </article>
+        <!-- 7 -->
+        <article class="prop reveal" data-mode="sale" data-city="lahore" data-type="house" data-bucket="over7cr" data-budget="over7cr">
+          <div class="facade sky"><i class="win"></i><i class="win2"></i><i class="tag sale">For Sale</i></div>
+          <div class="prop-body">
+            <h3>Gulberg Heights Mansion</h3>
+            <div class="price">Rs. 8.9 Crore</div>
+            <div class="meta"><span><b>7</b> Beds</span><span><b>8</b> Baths</span><span><b>2 kanal</b></span></div>
+          </div>
+        </article>
+        <!-- 8 -->
+        <article class="prop reveal" data-mode="rent" data-city="karachi" data-type="apartment" data-budget="1to3cr">
+          <div class="facade dusk"><i class="win"></i><i class="win2"></i><i class="tag rent">For Rent</i></div>
+          <div class="prop-body">
+            <h3>Clifton Tower Apartment</h3>
+            <div class="price">Rs. 1,80,000/mo</div>
+            <div class="meta"><span><b>3</b> Beds</span><span><b>3</b> Baths</span><span><b>2,000</b> sq ft</span></div>
+          </div>
+        </article>
+        <!-- 9 -->
+        <article class="prop reveal" data-mode="sale" data-city="islamabad" data-type="house" data-budget="over7cr">
+          <div class="facade lake"><i class="win"></i><i class="win2"></i><i class="tag sale">For Sale</i></div>
+          <div class="prop-body">
+            <h3>F-8 Farmhouse Estate</h3>
+            <div class="price">Rs. 12 Crore</div>
+            <div class="meta"><span><b>6</b> Beds</span><span><b>7</b> Baths</span><span><b>4 kanal</b></span></div>
+          </div>
+        </article>
+        <!-- 10 -->
+        <article class="prop reveal" data-mode="sale" data-city="islamabad" data-type="apartment" data-budget="1to3cr">
+          <div class="facade gold"><i class="win"></i><i class="win2"></i><i class="tag sale">For Sale</i></div>
+          <div class="prop-body">
+            <h3>G-11 Markaz Apartment</h3>
+            <div class="price">Rs. 1.6 Crore</div>
+            <div class="meta"><span><b>2</b> Beds</span><span><b>2</b> Baths</span><span><b>1,200</b> sq ft</span></div>
+          </div>
+        </article>
+        <!-- 11 -->
+        <article class="prop reveal" data-mode="rent" data-city="islamabad" data-type="house" data-budget="1to3cr">
+          <div class="facade sand"><i class="win"></i><i class="win2"></i><i class="tag rent">For Rent</i></div>
+          <div class="prop-body">
+            <h3>E-11 Townhouse</h3>
+            <div class="price">Rs. 95,000/mo</div>
+            <div class="meta"><span><b>3</b> Beds</span><span><b>3</b> Baths</span><span><b>2,200</b> sq ft</span></div>
+          </div>
+        </article>
+        <!-- 12 -->
+        <article class="prop reveal" data-mode="sale" data-city="karachi" data-type="commercial" data-budget="3to7cr">
+          <div class="facade wood"><i class="win"></i><i class="win2"></i><i class="tag sale">For Sale</i></div>
+          <div class="prop-body">
+            <h3>Saddar Commercial Office</h3>
+            <div class="price">Rs. 3.8 Crore</div>
+            <div class="meta"><span><b>4</b> Offices</span><span><b>2</b> Baths</span><span><b>2,500</b> sq ft</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Can't find what you need?</h2>
+          <p>Tell us your requirements and we'll match you with the right property.</p>
+        </div>
+        <a class="btn btn-line" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.4);color:#fff" href="contact.html">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">Skyline<span>Realty</span></a>
+        <p>Trusted property consultants helping families buy, sell and rent across Pakistan since 2006.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Listings</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+923000000000">0300 000 0000</a></li>
+          <li><a href="mailto:hello@skyline-realty.pk">hello@skyline-realty.pk</a></li>
+          <li>Office 12, Sector E,<br/>DHA Phase 5, Lahore</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Timings</h4>
+        <ul>
+          <li>Mon – Sat: 10 AM – 8 PM</li>
+          <li>Sunday: By appointment</li>
+          <li>Public holidays: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Skyline Realty. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/923165661622?text=Hello%20Skyline%20Realty%2C%20I%27m%20interested%20in%20your%20property%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.5.7-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.2.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.1.1.8-.1 1.3z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
