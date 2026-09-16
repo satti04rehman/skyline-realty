@@ -120,7 +120,8 @@ section { padding: clamp(64px, 8vw, 100px) 0; }
 .alt { background: #fff; }
 
 /* ---- Property Facade Art ---- */
-.facade { position: relative; height: 190px; overflow: hidden; border-radius: 14px 14px 0 0; }
+.facade { position: relative; height: 190px; overflow: hidden; border-radius: 14px 14px 0 0; background: var(--surface); }
+.facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .facade.sky { background: linear-gradient(180deg, #2E5BFF, #0E2446); }
 .facade.dusk { background: linear-gradient(180deg, #5B7CFF, #7A5BFF); }
 .facade.lake { background: linear-gradient(180deg, #0E7CD1, #0E4B7A); }
