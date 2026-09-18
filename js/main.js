@@ -210,7 +210,7 @@
         "Interested in: " + encodeURIComponent(interest) + "%0A" +
         "Message: " + encodeURIComponent(message);
 
-      window.open("https://wa.me/923165661622?text=" + text, "_blank");
+      window.open("mailto:hello@skyline-realty.pk?subject=Enquiry &body=" + encodeURIComponent(text), "_blank");
     });
   }
 })();
