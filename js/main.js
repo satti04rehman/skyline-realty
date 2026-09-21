@@ -204,13 +204,13 @@
       const message = document.getElementById("cf-message").value.trim();
 
       const text =
-        "Hello Skyline Realty!%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Phone: " + encodeURIComponent(phone) + "%0A" +
-        "Interested in: " + encodeURIComponent(interest) + "%0A" +
-        "Message: " + encodeURIComponent(message);
+        "Hello Skyline Realty!\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Interested in: " + interest + "\n" +
+        "Message: " + message;
 
-      window.open("mailto:hello@skyline-realty.pk?subject=Enquiry &body=" + encodeURIComponent(text), "_blank");
+      window.open("mailto:hello@skyline-realty.pk?subject=Enquiry&body=" + encodeURIComponent(text), "_blank");
     });
   }
 })();
